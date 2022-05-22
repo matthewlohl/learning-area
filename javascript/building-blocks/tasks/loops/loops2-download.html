@@ -40,7 +40,8 @@
       { name : 'Jada', number : '2282' },
     ]
 
-    // Add your code here
+    const result = phonebook.find(({name})=> name === 'Mustafa');
+    para.textContent = `${result.name}` + ` ${result.number}`;
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
